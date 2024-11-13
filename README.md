@@ -1,5 +1,5 @@
 ### Towards Unified and High-Fidelity Multi-Modality Image Fusion Model for Adverse Weather via Vision-Language Model
-##  Network Architectur
+##  Network Architecture
 ![](./figs/overview.png)
 
 ## Contents
