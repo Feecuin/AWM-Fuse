@@ -1,12 +1,10 @@
 ### Towards Unified and High-Fidelity Multi-Modality Image Fusion Model for Adverse Weather via Vision-Language Model
 ##  Network Architecture
-![](.\figs\overview.png)
+![](./figs/overview.png)
 
 ## Contents
 - [Testing](#Testing)
-- [Adverse Weather Fusion](#Adverse-Weather-Fusion)
 - [Gallery](#Gallery)
-
 
 
 <h2 id="Testing"> Testing</h2>
@@ -23,43 +21,6 @@ python test.py \
  --blip_ir_text ./Test_imgs/Haze/ir_npy
 ```
 
-<h2 id='Adverse-Weather-Fusion'> Adverse Weather Fusion</h2>
-<table border="" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center"><b>VI/IR(Rain)</b></td>
-    <td align="center"><b>VI_text</b></td>
-    <td align="center"><b>IR_text</b></td>
-  </tr>
-    <tr>
-    <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="180"></td>
-  </tr>
-</table>
-<table border="" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center"><b>VI/IR(Haze)</b></td>
-    <td align="center"><b>VI_text</b></td>
-    <td align="center"><b>IR_text</b></td>
-  </tr>
-    <tr>
-    <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="200"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="200"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="200"></td>
-  </tr>
-</table>
-<table border="" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center"><b>VI/IR(Snow)</b></td>
-    <td align="center"><b>VI_text</b></td>
-    <td align="center"><b>IR_text</b></td>
-  </tr>
-    <tr>
-    <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="180"></td>
-  </tr>
-</table>
 
 <h2 id='Gallery'> Gallery</h2>
 
