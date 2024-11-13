@@ -23,64 +23,41 @@ python test.py \
  --blip_ir_text ./Test_imgs/Haze/ir_npy
 ```
 
-<!-- <h2 id='Adverse-Weather-Fusion'> Adverse Weather Fusion</h2>
-
-<table border="" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center"><b>Rain</b></td>
-    <td align="center"><b>Haze</b></td>
-    <td align="center"><b>Snow</b></td>
-  </tr>
-    <tr>
-    <td style="padding: 20px;"><img src="./figs/rain_removal_gradient.gif" alt="Rain" width="240" height="180"></td>
-    <td style="padding: 20px;"><img src="./figs/haze_removal_gradient.gif" alt="Haze" width="240" height="180"></td>
-    <td style="padding: 20px;"><img src="./figs/snow_removal_gradient.gif" alt="Snow" width="240" height="180"></td>
-  </tr>
-</table> -->
 <h2 id='Adverse-Weather-Fusion'> Adverse Weather Fusion</h2>
-<h3>Rain</h3>
 <table border="" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center"><b>VI/IR</b></td>
+    <td align="center"><b>VI/IR(Rain)</b></td>
     <td align="center"><b>VI_text</b></td>
     <td align="center"><b>IR_text</b></td>
-    <td align="center"><b>Result</b></td>
   </tr>
     <tr>
     <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_Result.png" alt="Result" width="240" height="180"></td>
+    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="180"></td>
+    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="180"></td>
   </tr>
 </table>
-<h3>Haze</h3>
 <table border="" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center"><b>VI/IR</b></td>
+    <td align="center"><b>VI/IR(Haze)</b></td>
     <td align="center"><b>VI_text</b></td>
     <td align="center"><b>IR_text</b></td>
-    <td align="center"><b>Result</b></td>
   </tr>
     <tr>
-    <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_Result.png" alt="Result" width="240" height="180"></td>
+    <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="200"></td>
+    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="200"></td>
+    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="200"></td>
   </tr>
 </table>
-<h3>Snow</h3>
 <table border="" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center"><b>VI/IR</b></td>
+    <td align="center"><b>VI/IR(Snow)</b></td>
     <td align="center"><b>VI_text</b></td>
     <td align="center"><b>IR_text</b></td>
-    <td align="center"><b>Result</b></td>
   </tr>
     <tr>
     <td ><img src="./figs/Haze/Haze_VI_IR.png" alt="VI/IR" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="240" height="180"></td>
-    <td ><img src="./figs/Haze/Haze_Result.png" alt="Result" width="240" height="180"></td>
+    <td ><img src="./figs/Haze/Haze_VI_TEXT.png" alt="VI_text" width="350" height="180"></td>
+    <td ><img src="./figs/Haze/Haze_IR_TEXT.png" alt="IR_text" width="350" height="180"></td>
   </tr>
 </table>
 
