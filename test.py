@@ -12,11 +12,11 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 
 def main(args):
-    # ANSI 转义码的前缀和后缀
-    RESET = "\033[0m"  # 重置为默认颜色
-    BOLD = "\033[1m"  # 粗体
-    UNDERLINE = "\033[4m"  # 下划线
-    # 颜色
+
+    RESET = "\033[0m"  
+    BOLD = "\033[1m"  
+    UNDERLINE = "\033[4m"  
+
     BLACK = "\033[30m"
     RED = "\033[31m"
     GREEN = "\033[32m"
@@ -171,13 +171,13 @@ def prepare_blip_path(dataset_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--ir_path', default='/home/feecuin/datasets/CVPR25_Dataset/Test/Haze/ir', type=str)
-    parser.add_argument('--vi_path', default='/home/feecuin/datasets/CVPR25_Dataset/Test/Haze/vi', type=str)
-    parser.add_argument('--weights_path', type=str, default='/home/feecuin/CVPR25/version1/checkpoint/new_loss_from_remote/mamba_0015.pth', help='initial weights path')
-    parser.add_argument('--save_path', type=str, default='./result/lxl_5_9_haze_10', help='output save image path')
-    parser.add_argument('--input_text',default='/home/feecuin/datasets/CVPR25_Dataset/Test/Haze/hazy_captions',type=str)
-    parser.add_argument('--blip_vi_text',default='/home/feecuin/datasets/CVPR25_Dataset/Test/Haze/vi_npy',type=str)
-    parser.add_argument('--blip_ir_text',default='/home/feecuin/datasets/CVPR25_Dataset/Test/Haze/ir_npy',type=str)
+    parser.add_argument('--ir_path', default='', type=str)
+    parser.add_argument('--vi_path', default='', type=str)
+    parser.add_argument('--weights_path', type=str, default='', help='initial weights path')
+    parser.add_argument('--save_path', type=str, default='', help='output save image path')
+    parser.add_argument('--input_text',default='',type=str)
+    parser.add_argument('--blip_vi_text',default='',type=str)
+    parser.add_argument('--blip_ir_text',default='',type=str)
     parser.add_argument('--device', default='cuda:0', help='device (i.e. cuda or cpu)')
     opt = parser.parse_args()
     main(opt)
