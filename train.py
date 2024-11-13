@@ -25,14 +25,14 @@ def hyper_args():
     """
     parser = argparse.ArgumentParser(description='RobF Net train process')
     # dataset
-    parser.add_argument('--ir_path', default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/ir', type=str)
-    parser.add_argument('--vi_path', default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/vi', type=str)
-    parser.add_argument('--gt_path', default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/gt_vi', type=str)
-    parser.add_argument('--gt_ir_path',default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/gt_ir',type=str)
-    parser.add_argument('--clip_path',default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/caption',type=str)
-    parser.add_argument('--target_clip_path',default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/gt_vi_text_77',type=str)
-    parser.add_argument('--blip1_path',default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/vi_npy',type=str)
-    parser.add_argument('--blip2_path',default='/home/feecuin/datasets/CVPR25_Dataset/All_Weather/ir_npy',type=str)
+    parser.add_argument('--ir_path', default='', type=str)
+    parser.add_argument('--vi_path', default='', type=str)
+    parser.add_argument('--gt_path', default='', type=str)
+    parser.add_argument('--gt_ir_path',default='',type=str)
+    parser.add_argument('--clip_path',default='',type=str)
+    parser.add_argument('--target_clip_path',default='',type=str)
+    parser.add_argument('--blip1_path',default='',type=str)
+    parser.add_argument('--blip2_path',default='',type=str)
     # implement details
     parser.add_argument('--img_size', default=160 , type=int, help='裁剪图片的大小')
     parser.add_argument('--batchsize', default=3, type=int, help='mini-batch size')  # 32
@@ -182,7 +182,7 @@ def get_image_feature(model_clip, image):
             image = resize(image)
             image_feature = model_clip.encode_image(image)
             return image_feature
-# 利用clip提取文本特征
+
 @torch.no_grad()
 def get_text_feature(model_clip, text):
     text_feature = model_clip.encode_text(text)
