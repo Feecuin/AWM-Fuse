@@ -23,7 +23,7 @@ def hyper_args():
     """
     get hyper parameters from args
     """
-    parser = argparse.ArgumentParser(description='RobF Net train process')
+    parser = argparse.ArgumentParser()
     # dataset
     parser.add_argument('--ir_path', default='', type=str)
     parser.add_argument('--vi_path', default='', type=str)
@@ -34,7 +34,7 @@ def hyper_args():
     parser.add_argument('--blip1_path',default='',type=str)
     parser.add_argument('--blip2_path',default='',type=str)
     # implement details
-    parser.add_argument('--img_size', default=160 , type=int, help='裁剪图片的大小')
+    parser.add_argument('--img_size', default=160 , type=int, help='Crop the size of the image')
     parser.add_argument('--batchsize', default=3, type=int, help='mini-batch size')  # 32
     parser.add_argument('--lr', default=0.0001, type=float, help='learning rate')
     parser.add_argument("--start_epoch", default=1, type=int, help="Manual epoch number (useful on restarts)")
