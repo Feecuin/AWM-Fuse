@@ -1,4 +1,5 @@
-### Towards Unified and High-Fidelity Multi-Modality Image Fusion Model for Adverse Weather via Vision-Language Model
+### Adverse Weather Multi-Modality Image Fusion via Global and Local Text Perception
+Perception
 ##  Network Architecture
 ![](./figs/overview.jpg)
 
