@@ -1,6 +1,6 @@
 ### Towards Unified and High-Fidelity Multi-Modality Image Fusion Model for Adverse Weather via Vision-Language Model
 ##  Network Architecture
-![](./figs/overview.png)
+![](./figs/overview.jpg)
 
 ## Contents
 - [Testing](#Testing)
@@ -24,13 +24,13 @@ python test.py \
 
 <h2 id='Gallery'> Gallery</h2>
 
-![Gallery](./figs/Rain.png)
+![Gallery](./figs/Rain.jpg)
 Fig1. Comparison of fusion results obtained by the proposed algorithm under rain weather and the results of the comparison methods under ideal condition.
 
-![Gallery](./figs/Haze.png)
+![Gallery](./figs/Haze.jpg)
 Fig2. Comparison of fusion results obtained by the proposed algorithm under haze weather and the results of the comparison methods under ideal condition.
 
-![Gallery](./figs/Snow.png)
+![Gallery](./figs/Snow.jpg)
 Fig3. Comparison of fusion results obtained by the proposed algorithm under snow weather, and the results of the comparison methods under ideal condition.
 
 
