@@ -702,7 +702,7 @@ class SS2D(nn.Module):
         return out
 
 
-class VSSBlock(nn.Module):
+class RSSBlock(nn.Module):
     def __init__(
             self,
             hidden_dim: int = 0,
@@ -816,7 +816,7 @@ class AWMFuse(nn.Module):
 
         base_d_state = 4
         self.encoder_level1 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=dim,
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -827,7 +827,7 @@ class AWMFuse(nn.Module):
             for i in range(num_blocks[0])])
         self.down1_2 = Downsample(dim)  ## From Level 1 to Level 2
         self.encoder_level2 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 1),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -839,7 +839,7 @@ class AWMFuse(nn.Module):
 
         self.down2_3 = Downsample(int(dim * 2 ** 1))  ## From Level 2 to Level 3
         self.encoder_level3 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 2),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -851,7 +851,7 @@ class AWMFuse(nn.Module):
 
         self.down3_4 = Downsample(int(dim * 2 ** 2))  ## From Level 3 to Level 4
         self.latent = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 3),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -864,7 +864,7 @@ class AWMFuse(nn.Module):
         self.up4_3 = Upsample(int(dim * 2 ** 3))  ## From Level 4 to Level 3
         self.reduce_chan_level3 = nn.Conv2d(int(dim * 2 ** 3), int(dim * 2 ** 2), kernel_size=1, bias=bias)
         self.decoder_level3 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 2),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -877,7 +877,7 @@ class AWMFuse(nn.Module):
         self.up3_2 = Upsample(int(dim * 2 ** 2))  ## From Level 3 to Level 2
         self.reduce_chan_level2 = nn.Conv2d(int(dim * 2 ** 2), int(dim * 2 ** 1), kernel_size=1, bias=bias)
         self.decoder_level2 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 1),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -890,7 +890,7 @@ class AWMFuse(nn.Module):
         self.up2_1 = Upsample(int(dim * 2 ** 1))  ## From Level 2 to Level 1  (NO 1x1 conv to reduce channels)
 
         self.decoder_level1 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 1),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -901,7 +901,7 @@ class AWMFuse(nn.Module):
             for i in range(num_blocks[0])])
 
         self.refinement_1 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim * 2 ** 1),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -912,7 +912,7 @@ class AWMFuse(nn.Module):
             for i in range(num_refinement_blocks)])
         
         self.refinement_2 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
@@ -923,7 +923,7 @@ class AWMFuse(nn.Module):
             for i in range(num_refinement_blocks)])
         
         self.refinement_2 = nn.ModuleList([
-            VSSBlock(
+            RSSBlock(
                 hidden_dim=int(dim/2),
                 drop_path=drop_path_rate,
                 norm_layer=nn.LayerNorm,
