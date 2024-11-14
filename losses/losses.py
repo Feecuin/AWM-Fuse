@@ -304,12 +304,12 @@ class fusion_loss_vif(nn.Module):
         image_B = torch.mean(image_B, dim=1, keepdim=True)
         image_fused = torch.mean(image_fused_RGB, dim=1, keepdim=True)
         loss_l1 = 10 * self.L_Inten(image_A, image_B, image_fused)
-        loss_gradient = 10 * self.L_Grad(image_A, image_B, image_fused)
+        # loss_gradient = 10 * self.L_Grad(image_A, image_B, image_fused)
         loss_SSIM = 10 * (1 - self.L_SSIM(image_A, image_B, image_fused))
         loss_color = 10 * self.loss_func_color(image_RGB, image_fused_RGB)
         loss_cosine_similarity = self.cosine_similarity(target_text_feature, rgb_Fuse_image_feature)
-        fusion_loss = loss_l1 + loss_gradient + loss_SSIM + loss_color + loss_cosine_similarity
-        # return fusion_loss, loss_gradient, loss_l1, loss_SSIM, loss_color
+        fusion_loss = loss_l1  + loss_SSIM + loss_color + loss_cosine_similarity
+        # return fusion_loss, loss_l1, loss_SSIM, loss_color
         return fusion_loss
     
     def cosine_similarity(self,text_features, image_features):
