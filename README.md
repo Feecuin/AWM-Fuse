@@ -1,5 +1,5 @@
 ### Adverse Weather Multi-Modality Image Fusion via Global and Local Text Perception
-Perception
+
 ##  Network Architecture
 ![](./figs/overview.jpg)
 
