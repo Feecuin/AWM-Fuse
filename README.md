@@ -32,13 +32,13 @@ Table1. Comparison of quantitative results of different methods in ideal and adv
 <h2 id='Gallery'> Gallery</h2>
 
 ![Gallery](./figs/Rain.jpg)
-Fig1. Comparison of fusion results obtained by the proposed algorithm under rain weather and the results of the comparison methods under ideal condition.
+Fig1. Comparison of image fusion results of different methods in ideal and rain scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Rain).
 
 ![Gallery](./figs/Haze.jpg)
-Fig2. Comparison of fusion results obtained by the proposed algorithm under haze weather and the results of the comparison methods under ideal condition.
+Fig2. Comparison of image fusion results of different methods in ideal and haze scenes.The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Haze).
 
 ![Gallery](./figs/Snow.jpg)
-Fig3. Comparison of fusion results obtained by the proposed algorithm under snow weather, and the results of the comparison methods under ideal condition.
+Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Snow).
 
 
 
