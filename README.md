@@ -6,6 +6,7 @@
 ## Contents
 - [Testing](#Testing)
 - [Gallery](#Gallery)
+- [Table](#Table)
 - Waiting....
 
 <h2 id="Testing"> Testing</h2>
@@ -21,6 +22,11 @@ python test.py \
  --blip_vi_text ./Test_imgs/Haze/vi_npy \
  --blip_ir_text ./Test_imgs/Haze/ir_npy
 ```
+<h2 id='Table'> Table</h2>
+Table1. Comparison of quantitative results of different methods in ideal and adverse weather scenes. The best scores are in bold, while the second-best scores are in blue.
+
+![Table](./figs/table.jpg)
+
 
 
 <h2 id='Gallery'> Gallery</h2>
