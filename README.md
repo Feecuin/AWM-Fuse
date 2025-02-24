@@ -16,7 +16,7 @@ Testing( An example of Haze.)
 python test.py \
  --ir_path ./Test_imgs/Haze/ir \
  --vi_path ./Test_imgs/Haze/vi \
- --weights_path ./checkpoint/AWM_Fuse.pth \
+ --weights_path ./checkpoint/XXX_Fuse.pth \
  --save_path ./result/Haze  \
  --input_text ./Test_imgs/Haze/Haze_captions \
  --blip_vi_text ./Test_imgs/Haze/vi_npy \
@@ -32,13 +32,13 @@ Table1. Comparison of quantitative results of different methods in ideal and adv
 <h2 id='Gallery'> Gallery</h2>
 
 ![Gallery](./figs/Rain.jpg)
-Fig1. Comparison of image fusion results of different methods in ideal and rain scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Rain).
+Fig1. Comparison of image fusion results of different methods in ideal and rain scenes. The ”Difference” represents the difference map between XXX-Fuse (GT) and XXX-Fuse (Rain).
 
 ![Gallery](./figs/Haze.jpg)
-Fig2. Comparison of image fusion results of different methods in ideal and haze scenes.The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Haze).
+Fig2. Comparison of image fusion results of different methods in ideal and haze scenes.The ”Difference” represents the difference map between XXX-Fuse (GT) and XXX-Fuse (Haze).
 
 ![Gallery](./figs/Snow.jpg)
-Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Snow).
+Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between XXX-Fuse (GT) and XXX-Fuse (Snow).
 
 
 
