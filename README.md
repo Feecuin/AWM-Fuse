@@ -60,9 +60,10 @@ python test.py \
 <h2 id='Table'> Table</h2>
 Table1. Comparison of quantitative results of different methods in ideal and adverse weather scenes. The best scores are in bold, while the second-best scores are in blue.
 
-![Table](./figs/table.jpg)
+![Table](./figs/table.png)
 
-
+Table2. Quantitative comparison of all methods in three standard datasets. The best scores are in bold, while the second-best scores are in blue.
+![Table](./figs/table2.png)
 
 <h2 id='Gallery'> Gallery</h2>
 
@@ -74,6 +75,7 @@ Fig2. Comparison of image fusion results of different methods in ideal and haze 
 
 ![Gallery](./figs/Snow.jpg)
 Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Snow).
+
 
 
 
