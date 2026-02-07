@@ -15,8 +15,9 @@
 <table>
 <thead>
   <tr>
-    <th style="text-align: center;">Dataset and Model</th>
+    <th style="text-align: center;">Dataset, Text and Model</th>
     <th>AWMM-100k</th>
+    <th>Text</th>
     <th>Pre-trained Model</th>
   </tr>
 </thead>
@@ -24,6 +25,7 @@
   <tr>
     <td>Baidu Cloud</td>
     <td> <a href="https://pan.baidu.com/s/1CPZcNob1BZaGNzwkKp3AGQ?pwd=cmn4">Download (cmn4)</a> </td>
+    <td> <a href="https://pan.baidu.com/s/14bw9C9YrDngvHf7Zh2ZfrA?pwd=r93v">Download (r93v)</a> </td>
     <td> <a href="https://pan.baidu.com/s/1sa2mGqsqG5Ju9MJNqqyuXg?pwd=37jh">Download (37jh)</a> </td>
   </tr>
 </tbody>
@@ -75,6 +77,7 @@ Fig2. Comparison of image fusion results of different methods in ideal and haze 
 
 ![Gallery](./figs/Snow.jpg)
 Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Snow).
+
 
 
 
