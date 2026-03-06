@@ -78,6 +78,7 @@ Fig2. Comparison of image fusion results of different methods in ideal and haze 
 ![Gallery](./figs/Snow.jpg)
 Fig3. Comparison of image fusion results of different methods in ideal and snow scenes. The ”Difference” represents the difference map between AWM-Fuse (GT) and AWM-Fuse (Snow).
 
+test
 
 
 
