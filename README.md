@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-red.svg)](https://pytorch.org/)
 
-> **Authors: Xilai Li, Huichun Liu, Xiaosong Li, Tao Ye, Zhenyu Kuang, Huafeng Li**
+> **Authors: Xilai Li, Huichun Liu(Co-first Authors), Xiaosong Li, Tao Ye, Zhenyu Kuang, Huafeng Li**
 
 This is the official PyTorch implementation of **AWM-Fuse**, a unified framework that handles diverse weather degradations via global and local text perception with shared parameters. AWM-Fuse integrates three key components: (1) **Global Text Perception Module (GTPM)** to extract scene features and degradation types; (2) **Local Text Perception Module (LTPM)** to concentrate on specific degradation effects; and (3) **VLM-Driven Loss** to enforce semantic consistency between fused outputs and textual descriptions.
 
