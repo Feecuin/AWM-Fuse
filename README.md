@@ -9,7 +9,7 @@
 This is the official PyTorch implementation of **AWM-Fuse**, a unified framework that handles diverse weather degradations via global and local text perception with shared parameters. AWM-Fuse integrates three key components: (1) **Global Text Perception Module (GTPM)** to extract scene features and degradation types; (2) **Local Text Perception Module (LTPM)** to concentrate on specific degradation effects; and (3) **VLM-Driven Loss** to enforce semantic consistency between fused outputs and textual descriptions.
 
 <p align="center">
-  <img src="Figs/Fig1.pdf" width="90%">
+  <img src="Figs/Fig1_01.png" width="90%">
 </p>
 
 ## 📖 Abstract
@@ -32,36 +32,39 @@ Multi-modality image fusion (MMIF) in adverse weather aims to address the loss o
 ### Rain Scenarios
 
 <p align="center">
-  <img src="Figs/Fig3.pdf" width="90%">
+  <img src="Figs/Fig3.png" width="90%">
 </p>
 
 ### Haze Scenarios
 
 <p align="center">
-  <img src="Figs/Fig5.pdf" width="90%">
+  <img src="Figs/Fig5_01.png" width="90%">
 </p>
 
 ### Snow Scenarios
 
 <p align="center">
-  <img src="Figs/Fig4.pdf" width="90%">
+  <img src="Figs/Fig4.png" width="90%">
 </p>
 
 ### Real World Performance
 
 <p align="center">
-  <img src="Figs/Fig9.pdf" width="90%">
+  <img src="Figs/Fig9_01.png" width="90%">
 </p>
 
 ### Downstream Task Performance
 
 <p align="center">
-  <img src="Figs/Fig7.pdf" width="90%">
+  <img src="Figs/Fig7.png" width="90%">
 </p>
 
 ## ✨ Overview
 
 AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene semantics and degradation categories, (2) local text encoding (LLM/ChatGPT) to provide token-level cues for damaged regions, and (3) a cross-modal fusion engine with multi-scale/wavelet processing to decouple frequency degradations. A VLM-driven loss (CLIP) aligns fused outputs with text semantics.
+<p align="center">
+  <img src="Figs/Fig2_01.png" width="90%">
+</p>
 
 ## 📦 Datasets
 
@@ -70,7 +73,6 @@ AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene s
 | Source | Dataset |
 |:---:|:---:|
 | **☁️ Baidu Cloud** | [📥 Download](https://pan.baidu.com/s/17TUs9KbUg1E1YaJ-utyLTQ?pwd=46j6) <br> `pwd: [46j6]` |
-|
 
 
 ### Pre-Trained Models
@@ -78,7 +80,6 @@ AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene s
 | Source | Weights |
 |:---:|:---:|
 | **☁️ Baidu Cloud** | [📥 Download](https://pan.baidu.com/s/1T0C73v3ypZH1z9qwG1jOxw?pwd=sbm3) <br> `pwd: [sbm3]` |
-|
 
 > 💡 **Tip**: Pre-trained models are available for quick inference and fine-tuning on your own datasets.
 
