@@ -1,4 +1,4 @@
-# CAWM-Mamba / AWM-Fuse: Unified Model for Infrared-Visible Fusion and Compound Adverse-Weather Restoration
+# AWM-Fuse: Unified Model for Infrared-Visible Fusion and Compound Adverse-Weather Restoration
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.02560-b31b1b.svg)](https://arxiv.org/abs/2603.02560)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)](https://www.python.org/)
@@ -69,7 +69,7 @@ AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene s
 
 | Source | Dataset |
 |:---:|:---:|
-| **☁️ Baidu Cloud** | [📥 Download]() <br> `pwd: [PASTE_PASSWORD]` |
+| **☁️ Baidu Cloud** | [📥 Download](https://pan.baidu.com/s/17TUs9KbUg1E1YaJ-utyLTQ?pwd=46j6) <br> `pwd: [46j6]` |
 |
 
 
@@ -77,7 +77,7 @@ AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene s
 
 | Source | Weights |
 |:---:|:---:|
-| **☁️ Baidu Cloud** | [📥 Download]() <br> `pwd: [PASTE_PASSWORD]` |
+| **☁️ Baidu Cloud** | [📥 Download](https://pan.baidu.com/s/1T0C73v3ypZH1z9qwG1jOxw?pwd=sbm3) <br> `pwd: [sbm3]` |
 |
 
 > 💡 **Tip**: Pre-trained models are available for quick inference and fine-tuning on your own datasets.
