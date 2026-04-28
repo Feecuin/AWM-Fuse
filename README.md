@@ -32,31 +32,31 @@ Multi-modality image fusion (MMIF) in adverse weather aims to address the loss o
 ### Rain Scenarios
 
 <p align="center">
-  <img src="Code/Figs/Fig3.pdf" width="90%">
+  <img src="Figs/Fig3.pdf" width="90%">
 </p>
 
 ### Haze Scenarios
 
 <p align="center">
-  <img src="Code/Figs/Fig5.pdf" width="90%">
+  <img src="Figs/Fig5.pdf" width="90%">
 </p>
 
 ### Snow Scenarios
 
 <p align="center">
-  <img src="Code/Figs/Fig4.pdf" width="90%">
+  <img src="Figs/Fig4.pdf" width="90%">
 </p>
 
 ### Real World Performance
 
 <p align="center">
-  <img src="Code/Figs/Fig9.pdf" width="90%">
+  <img src="Figs/Fig9.pdf" width="90%">
 </p>
 
 ### Downstream Task Performance
 
 <p align="center">
-  <img src="Code/Figs/Fig7.pdf" width="90%">
+  <img src="Figs/Fig7.pdf" width="90%">
 </p>
 
 ## ✨ Overview
