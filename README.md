@@ -1,5 +1,5 @@
 # AWM-Fuse: Multi-Modality Image Fusion for Adverse Weather via Global and Local Text Perception (IEEE-TIP 2026)
-[![arXiv](https://img.shields.io/badge/arXiv-2603.02560-b31b1b.svg)](https://arxiv.org/abs/2603.02560)
+[![Paper](https://img.shields.io/badge/https://ieeexplore.ieee.org/document/11515008)](https://ieeexplore.ieee.org/document/11515008)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9%2B-red.svg)](https://pytorch.org/)
 
