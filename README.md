@@ -169,8 +169,8 @@ python Code/test.py \
 	--ir_path ./datasets/test/ir \
 	--vi_path ./datasets/test/vi \
 	--clip_path ./datasets/test/Text/caption \
-	--blip1_path ./datasets/train/Text/vi_npy \
-	--blip2_path ./datasets/train/Text/ir_npy \
+	--blip1_path ./datasets/test/Text/vi_npy \
+	--blip2_path ./datasets/test/Text/ir_npy \
 	--save_path ./Experiment/results
 ```
 
