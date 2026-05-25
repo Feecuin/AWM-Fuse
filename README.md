@@ -69,9 +69,11 @@ AWM-Fuse combines: (1) global text encoding (BLIP) to capture high-level scene s
 
 ### Dataset Download
 
-| Source | Dataset |
+We use the **AWMM-100K** dataset and the **AWMM-Text** benchmark in this work. Both datasets are available on the project page below:
+
+| Dataset | Link |
 |:---:|:---:|
-| **☁️ Baidu Cloud** | [📥 Download](https://pan.baidu.com/s/17TUs9KbUg1E1YaJ-utyLTQ?pwd=46j6) <br> `pwd: [46j6]` |
+| **AWMM-100K & AWMM-Text** | [📥 Download / Project Page](https://ixilai.github.io/AWMM-100K/) |
 
 
 ### Pre-Trained Models
