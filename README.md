@@ -193,10 +193,13 @@ $$\mathcal{L}_{total} = \lambda_1 \mathcal{L}_{recon} + \lambda_2 \mathcal{L}_{g
 If you use this code and work, please cite:
 
 ```bibtex
-@article{Li2026AWMFuse,
-  title={AWM-Fuse: Multi-Modality Image Fusion for Adverse Weather via Global and Local Text Perception},
+@article{li2026awm,
+  title={Awm-fuse: Multi-modality image fusion for adverse weather via global and local text perception},
   author={Li, Xilai and Liu, Huichun and Li, Xiaosong and Ye, Tao and Kuang, Zhenyu and Li, Huafeng},
-  year={2026}
+  journal={IEEE Transactions on Image Processing},
+  year={2026},
+  pages={5151-5164},
+  publisher={IEEE}
 }
 ```
 
