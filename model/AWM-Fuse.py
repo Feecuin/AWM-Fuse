@@ -948,7 +948,7 @@ class Upsample(nn.Module):
 
 
 
-class testMamba(nn.Module):
+class AWMFuse(nn.Module):
     def __init__(self,
                  model_clip,
                  inp_channels=32,
@@ -962,7 +962,7 @@ class testMamba(nn.Module):
                  dual_pixel_task=False  ## True for dual-pixel defocus deblurring only. Also set inp_channels=6
                  ):
 
-        super(testMamba, self).__init__()
+        super(AWMFuse, self).__init__()
         self.model_clip = model_clip
 
 
@@ -1251,7 +1251,7 @@ if __name__ == "__main__":
     batch_size = 1
 
     model_clip, _ = clip.load("ViT-B/32")
-    model = testMamba(   
+    model = AWMFuse(   
         model_clip,     
         inp_channels=32,
         out_channels=32,
