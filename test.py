@@ -64,8 +64,7 @@ def main(args):
         model_clip, _ = clip.load("ViT-B/32", device=device)
 
 
-        model = testMamba(model_clip=model_clip
-                       ).to(device)
+        model = AWMFuse(model_clip=model_clip).to(device)
         model = torch.nn.DataParallel(model)
         model_weight_path = args.weights_path
 
